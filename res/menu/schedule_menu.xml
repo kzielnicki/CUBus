@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/route_to_here"
+          android:icon="@drawable/arrow_in"
+          android:title="Route To Here" />
+    <item android:id="@+id/route_from_here"
+          android:icon="@drawable/arrow_out"
+          android:title="Route From Here" />
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="app_name">CU Bus</string>
+
+    
+    <string name="directionsGPSbutton">From GPS</string>
+
+    
+    <string name="cancel">Cancel</string>
+
+    
+    <string name="directionsFromHint">From Stop Name</string>
+    <string name="directionsToHint">To Stop Name</string>
+    <string name="search">Search</string>
+    <string name="mapsApiProduction">0i14vuLPTs-OLrGUUXFj7MlP6BoP-FGOuJED9pQ</string>
+    <string name="mapsApiDebug">0i14vuLPTs-PPey6unG2uBHw2mCnTHFfnur7d8g</string>
+    <string name="newDirButton">New Directions</string>
+
+</resources>

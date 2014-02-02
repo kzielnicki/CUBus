@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <LinearLayout
+        android:id="@+id/directionFromLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <EditText
+            android:id="@+id/directionSearchFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/directionsFromHint"
+            android:imeOptions="normal"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/getGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/directionsGPSbutton" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/directionsFromStopList"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_alignLeft="@+id/directionFromLayout"
+        android:layout_below="@+id/directionFromLayout" >
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/directionToLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/directionsFromStopList"
+        android:layout_below="@+id/directionsFromStopList" >
+        
+	    <EditText
+	        android:id="@+id/directionSearchTo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:hint="@string/directionsToHint"
+	        android:imeOptions="normal"
+	        android:singleLine="true" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/directionsToStopList"
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:layout_alignLeft="@+id/directionToLayout"
+        android:layout_below="@+id/directionToLayout" >
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/directionTimeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/directionsToStopList" >
+        
+	    <TimePicker
+	        android:id="@+id/directionsTimePicker"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/directionButtonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/directionTimeLayout"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel" />
+    </LinearLayout>
+
+</RelativeLayout>
